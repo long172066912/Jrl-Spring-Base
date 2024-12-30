@@ -10,10 +10,9 @@ import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toCollection;
 
 /**
- * 简单的对象工具类
- *
- * @author JerryLong
- */
+* 类帮助类
+* @author JerryLong
+*/
 public class JrlClassUtil {
 
     /**

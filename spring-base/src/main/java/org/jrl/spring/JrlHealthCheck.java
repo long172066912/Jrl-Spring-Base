@@ -1,7 +1,7 @@
 package org.jrl.spring;
 
 /**
-* 健康检查接口定义
+* 健康检查接口
 * @author JerryLong
 */
 @FunctionalInterface

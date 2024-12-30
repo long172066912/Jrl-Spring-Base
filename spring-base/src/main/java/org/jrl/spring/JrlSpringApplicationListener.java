@@ -1,5 +1,6 @@
 package org.jrl.spring;
 
+
 import org.jrl.spring.preheat.JrlPreHeatHealthCheckHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.actuate.health.HealthEndpoint;
@@ -10,7 +11,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import javax.annotation.Resource;
 
 /**
-* jrl springboot启动监听处理
+* 启动处理
 * @author JerryLong
 */
 @Configuration

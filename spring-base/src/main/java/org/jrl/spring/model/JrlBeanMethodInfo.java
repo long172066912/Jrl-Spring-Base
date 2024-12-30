@@ -1,23 +1,29 @@
 package org.jrl.spring.model;
 
+
 import java.io.Serializable;
 import java.lang.reflect.Method;
 
 /**
- * bean方法信息
- *
- * @author JerryLong
- */
-public class BeanMethodInfo implements Serializable {
+* bean实体对象
+* @author JerryLong
+*/
+public class JrlBeanMethodInfo implements Serializable {
     private Object bean;
     private String beanName;
     private Method method;
     private Integer order;
 
-    public BeanMethodInfo() {
+    public JrlBeanMethodInfo() {
     }
 
-    public BeanMethodInfo(Object bean, String beanName, Method method, Integer order) {
+    public JrlBeanMethodInfo(String beanName, Method method, Integer order) {
+        this.beanName = beanName;
+        this.method = method;
+        this.order = order;
+    }
+
+    public JrlBeanMethodInfo(Object bean, String beanName, Method method, Integer order) {
         this.bean = bean;
         this.beanName = beanName;
         this.method = method;

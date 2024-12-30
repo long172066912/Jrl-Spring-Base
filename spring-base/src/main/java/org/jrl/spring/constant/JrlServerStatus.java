@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
-* 服务状态枚举
+* 常量定义
 * @author JerryLong
 */
 public enum JrlServerStatus {
@@ -34,7 +34,7 @@ public enum JrlServerStatus {
             return;
         }
         if (!jrlServerStatus.equals(status)) {
-            LOGGER.info("jrlServerStatus oldStatus : {} , newStatus : {}", jrlServerStatus, status);
+            LOGGER.info("JrlServerStatus oldStatus : {} , newStatus : {}", jrlServerStatus, status);
             jrlServerStatus = status;
         }
     }

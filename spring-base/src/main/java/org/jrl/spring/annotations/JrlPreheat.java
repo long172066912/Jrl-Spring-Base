@@ -1,5 +1,8 @@
 package org.jrl.spring.annotations;
 
+
+import org.jrl.spring.constant.JrlSpringOrderConstants;
+
 import java.lang.annotation.*;
 
 /**
@@ -14,5 +17,5 @@ public @interface JrlPreheat {
      * 执行顺序，越大优先执行
      * @return
      */
-    int order() default 0;
+    int order() default JrlSpringOrderConstants.DEFAULT_MIDDLE;
 }

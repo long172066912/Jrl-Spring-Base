@@ -1,5 +1,8 @@
 package org.jrl.spring.annotations;
 
+
+import org.jrl.spring.constant.JrlSpringOrderConstants;
+
 import java.lang.annotation.*;
 
 /**
@@ -11,8 +14,8 @@ import java.lang.annotation.*;
 @Documented
 public @interface JrlShutdown {
     /**
-     * 执行顺序
+     * 执行顺序，范围0 ~ 100，越大优先执行，RPC关闭 88，MQ-Consumer 87，MQ-Producer 5
      * @return
      */
-    int order() default 0;
+    int order() default JrlSpringOrderConstants.DEFAULT_MIDDLE;
 }

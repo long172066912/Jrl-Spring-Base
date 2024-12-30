@@ -1,9 +1,10 @@
 package org.jrl.spring;
 
+
 import org.jrl.spring.constant.JrlSpringOrderConstants;
 
 /**
-* 预热处理接口
+* 预热处理
 * @author JerryLong
 */
 @FunctionalInterface
