@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    api project(":spring-base")
+    implementation ('org.springframework.boot:spring-boot-starter-web:2.5.7')
+    implementation 'commons-cli:commons-cli:1.4'
+    implementation group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.7'
+    implementation group: 'com.baomidou', name: 'mybatis-plus-boot-starter', version: '3.5.2'
+    implementation 'com.mysql:mysql-connector-j:8.0.31'
+}
+
+test {
+    useJUnitPlatform()
+}
